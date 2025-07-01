@@ -51,8 +51,6 @@ public class US_010_Incident extends MersysParent {
                 .log().body()
                 .statusCode(201)
                 .extract().body().path("id");
-
-        System.out.println("incidentID = " + incidentID);
     }
 
     @Test(dependsOnMethods = "postIncident")
@@ -83,7 +81,6 @@ public class US_010_Incident extends MersysParent {
 
     @Test(dependsOnMethods = "putIncident")
     public void deleteIncident() {
-        System.out.println("incidentID = " + incidentID);
         given()
                 .spec(reqSpec)
 
