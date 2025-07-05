@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import static io.restassured.RestAssured.given;
 
-public class US_108_Student extends MersysParent{
+public class US_106_Student extends MersysParent{
     String id = "";
 
     @Test

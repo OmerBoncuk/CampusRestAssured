@@ -7,7 +7,7 @@ import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 
-public class US_010_Incident extends MersysParent {
+public class US_110_Incident extends MersysParent {
     public String incidentID = "";
 
     @Test(priority = 1)

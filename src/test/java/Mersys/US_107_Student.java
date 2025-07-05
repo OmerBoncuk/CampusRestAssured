@@ -7,7 +7,7 @@ import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 
-public class US_009_Student extends MersysParent{
+public class US_107_Student extends MersysParent{
 
 String GroupId="";
 
