@@ -43,16 +43,14 @@ cd Postman_Campus_Api
 | --------- | ---------------------------------- | -------------------------------------- | -------------------------------- | ------------------------------------------------- |
 | **US001** | Login to API to obtain admin token | `/auth/login`                          | `200` (success), `400` (invalid) | Tests login with valid & invalid credentials      |
 | **US002** | Add a country with a state         | `/countries`                           | `201`                            | Verifies country, code, and state details         |
-| **US003** | CRUD operations on states          | `/states`                              | `200`, `201`, `204`              | Includes list (<1000ms), add, edit, delete        |
-| **US004** | CRUD operations on cities          | `/cities`                              | `200`, `201`, `204`              | List all <1000ms, specific city <200ms            |
-| **US005** | CRUD operations on exams           | `/exams`                               | `200`, `201`, `400`, `404`       | Checks creation, update, deletion, validation     |
-| **US006** | CRUD on custom fields              | `/custom-field-groups`                 | `200`, `201`, `400`, `204`       | Prevents duplicate `name` or `orderNo`            |
-| **US007** | CRUD on student groups             | `/student-group`                       | `200`, `201`, `400`              | Includes validations on name & description length |
-| **US008** | Add students to groups             | `/student-groups/{id}/add-students`    | `200`                            | Verify by listing students in group               |
-| **US009** | Remove students from groups        | `/student-groups/{id}/remove-students` | `200`                            | Ensure students are removed from group            |
-| **US010** | CRUD on education standards        | `/education-standard`                  | `200`, `201`, `204`, `400`       | Lists standards by school ID                      |
-| **US011** | CRUD on grading schemes            | `/grading-schemes`                     | `200`, `201`, `204`, `400`       | Validates name, type, and school link             |
-| **US012** | CRUD on incident types             | `/incident-type`                       | `200`, `201`, `204`, `400`       | Ensures proper incident data & error handling     |
+| **US101** | CRUD operations on states          | `/states`                              | `200`, `201`, `204`              | Includes list (<1000ms), add, edit, delete        |
+| **US102** | CRUD operations on cities          | `/cities`                              | `200`, `201`, `204`              | List all <1000ms, specific city <200ms            |
+| **US105** | CRUD on student groups             | `/student-group`                       | `200`, `201`, `400`              | Includes validations on name & description length |
+| **US106** | Add students to groups             | `/student-groups/{id}/add-students`    | `200`                            | Verify by listing students in group               |
+| **US107** | Remove students from groups        | `/student-groups/{id}/remove-students` | `200`                            | Ensure students are removed from group            |
+| **US108** | CRUD on education standards        | `/education-standard`                  | `200`, `201`, `204`, `400`       | Lists standards by school ID                      |
+| **US109** | CRUD on grading schemes            | `/grading-schemes`                     | `200`, `201`, `204`, `400`       | Validates name, type, and school link             |
+| **US110** | CRUD on incident types             | `/incident-type`                       | `200`, `201`, `204`, `400`       | Ensures proper incident data & error handling     |
 
 * tests contains individual feature tests matching each user story.
 * utils provides helpers for authentication and data generation.
