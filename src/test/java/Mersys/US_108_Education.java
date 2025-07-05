@@ -28,8 +28,8 @@ public class US_108_Education extends MersysParent {
     public void createEducation() {
         Map<String, Object> body = new HashMap<>();
         body.put("id", null);
-        body.put("name", random.name().fullName()); // random full name
-        body.put("description", random.job().title()); // random job descriptor
+        body.put("name", random.name().fullName());
+        body.put("description", random.job().title());
         body.put("gradeLevelId", "646cca8aacf2ee0d37c6d998");
         body.put("subjectId", "646ccc7eacf2ee0d37c6d9ab");
         body.put("gradeCategoriesTemplateId", "657707e18af7ce488ac69ba9");
@@ -56,8 +56,8 @@ public class US_108_Education extends MersysParent {
     public void updateEducation() {
         Map<String, Object> body = new HashMap<>();
         body.put("id", id);
-        body.put("name", random.name().fullName()); // random full name
-        body.put("description", random.job().title()); // random job descriptor
+        body.put("name", random.name().fullName());
+        body.put("description", random.job().title());
         body.put("gradeLevelId", "646cca8aacf2ee0d37c6d998");
         body.put("subjectId", "646ccc7eacf2ee0d37c6d9ab");
         body.put("gradeCategoriesTemplateId", "657707e18af7ce488ac69ba9");

@@ -9,7 +9,7 @@ public class US_101_State extends MersysParent {
     @Test
     public void createCountry() {
         Map<String, Object> country = new HashMap<>();
-        country.put("id", "6859a88e8ed86951f650b890"); // Geçerli country ID
+        country.put("id", "6859a88e8ed86951f650b890");
 
         Map<String, Object> state = new HashMap<>();
         state.put("id", null);
